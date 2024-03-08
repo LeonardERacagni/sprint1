@@ -1,0 +1,161 @@
+:root {
+    --rosaSuave: #ebb7ce;
+    --rosaFuerte: #b38471;
+    --verdeMilitar: #5c5e36;
+    --verdeOscuro: #1d3d33;
+    --negro: #0c181c;
+}
+
+@font-face {
+    font-family: "Anta";
+    src: url(../assets/fonts/Anta-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Anta";
+    /* outline: 1px solid red; */
+    color: white;
+}
+
+body {
+    background-color: var(--rosaSuave);
+    text-align: center;
+}
+
+
+h1 {
+    position: absolute;
+    color: white;
+    top: 2vh;
+    left: 2vh;
+    font-size: 10vh;
+    text-shadow: 1px 1px 2px var(--negro), 0 0 25px var(--rosaSuave), 0 0 5px var(--rosaFuerte);
+}
+
+header {
+    margin: 0px;
+    border: 0px;
+}
+
+div {
+    /* background-color: var(--color5); */
+}
+
+header h2,
+footer p {
+    color: white;
+}
+
+header h2 {
+    background-color: var(--negro);
+    text-align: center;
+    padding: 5px;
+    margin: 0px;
+    display: block;
+}
+
+nav {
+    padding: 2vh;
+    display: block;
+    text-align: center;
+}
+
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--rosaFuerte);
+    padding: 14px 16px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px var(--negro);
+    margin-top: 5px;
+    transition: all 0.1ms;
+    text-align: center;
+    color: white;
+}
+
+nav a:hover {
+    background-color: var(--negro);
+    animation: vibrator 1s infinite;
+    font-weight: bold;
+    color: var(--rosaSuave);
+}
+
+a[href="#"] {
+    background-color: var(--verdeOscuro);
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px var(--verdeMilitar);
+}
+
+
+#logo {
+    display: inline-block;
+    left: 15vh;
+}
+
+main {
+    display: block;
+    background-color: var(--rosaFuerte);
+    text-align: center;
+    margin: 2.5vh;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+main img {
+    border-radius: 20px;
+
+}
+
+section,
+.contacto {
+    background-color: var(--verdeOscuro);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    text-align: left;
+
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    padding: 1vh;
+    background-color: var(--negro);
+    margin-top: 2vh;
+    vertical-align: bottom;
+    color: white;
+    display: block;
+}
+
+p {
+    text-indent: 20px;
+}
+
+.contacto {
+    text-align: center;
+    text-indent: 0px;
+}
+
+.contacto p a {
+    color: rgb(0, 204, 255);
+}
+
+@keyframes vibrator {
+    0% {
+        transform: scale(1.5);
+    }
+
+    50% {
+        transform: scale(1.01);
+    }
+
+    100% {
+        transform: scale(1)
+    }
+
+}

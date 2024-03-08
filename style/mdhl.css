@@ -1,0 +1,150 @@
+:root {
+    --fondoOscuro: #93a8ac;
+    --fondoClaro: #d7e1e5;
+    --botonDesmarcado: #f7f7f7;
+    --botonMarcado: #f2994a;
+    --color5: #212121;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    /* outline: 1px solid red; */
+    color: var(--color5);
+}
+
+body {
+    background-color: var(--fondoOscuro);
+    text-align: center;
+}
+
+
+h1 {
+    position: absolute;
+    color: var(--fondoClaro);
+    top: 2vh;
+    left: 2vh;
+    font-size: 10vh;
+    text-shadow: 2px 2px var(--color5), 0 0 25px var(--color5), 0 0 5px var(--fondoOscuro);
+}
+
+header {
+    margin: 0px;
+    border: 0px;
+}
+
+div {
+    /* background-color: var(--color5); */
+}
+
+header h2 {
+    background-color: var(--color5);
+    color: var(--botonDesmarcado);
+    text-align: center;
+    padding: 5px;
+    margin: 0px;
+}
+
+nav {
+    width: 25vh;
+    min-height: 2vh;
+    padding: 2vh;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+nav a {
+    display: block;
+    text-decoration: none;
+    background-color: var(--botonDesmarcado);
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px var(--color5);
+    margin-top: 5px;
+    transition: all 0.1ms;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: var(--color5);
+    animation: vibrator 0.1s infinite;
+    font-weight: bold;
+    color: var(--botonDesmarcado);
+}
+
+a[href="#"] {
+    background-color: var(--botonMarcado);
+    color: var(--botonDesmarcado);
+    font-weight: bold;
+    text-shadow: 2px 2px 2px var(--color5);
+}
+
+
+#logo {
+    float: inline-end;
+    position: relative;
+    right: 10vw;
+    top: -100px;
+}
+
+main {
+    display: inline-block;
+    width: min-content;
+    background-color: var(--fondoClaro);
+    text-align: center;
+    margin-top: 2.5vh;
+    border-radius: 50px;
+}
+
+main img {
+    border-radius: 30px;
+}
+
+section,
+.contacto {
+    background-color: var(--botonDesmarcado);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 30px;
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    padding: 1vh;
+    background-color: var(--fondoClaro);
+    margin-top: 2vh;
+    vertical-align: bottom;
+}
+
+p {
+    text-indent: 20px;
+}
+
+.contacto p {
+    text-align: left;
+    text-indent: 0px;
+}
+
+.contacto p a {
+    color: blue;
+}
+
+@keyframes vibrator {
+    0% {
+        transform: rotateZ(-2deg);
+    }
+
+    50% {
+        transform: rotateZ(0deg) scale(1.01);
+    }
+
+    100% {
+        transform: rotateZ(2deg)
+    }
+
+}
