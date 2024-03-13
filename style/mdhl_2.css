@@ -7,7 +7,7 @@
 }
 
 @font-face {
-    font-family: "Anta";
+    font-family: "Anta"; 
     src: url(../assets/fonts/Anta-Regular.ttf);
 }
 
@@ -24,9 +24,29 @@ body {
     text-align: center;
 }
 
+.banner{
+    height: 20vw;
+    overflow: hidden;
+
+}
+
+header {
+    margin: 0px;
+    border: 0px;
+    width: 100%;
+    min-height: 20vh;
+    display: inline-block;
+    object-fit: cover;
+}
+
+.titulo{
+    background-image: url('../assets/images/design1_image2.jpg');
+    min-height: 20vh;
+    background-position-y: -11rem;
+}
+
 
 h1 {
-    position: absolute;
     color: white;
     top: 2vh;
     left: 2vh;
@@ -34,19 +54,6 @@ h1 {
     text-shadow: 1px 1px 2px var(--negro), 0 0 25px var(--rosaSuave), 0 0 5px var(--rosaFuerte);
 }
 
-header {
-    margin: 0px;
-    border: 0px;
-}
-
-div {
-    /* background-color: var(--color5); */
-}
-
-header h2,
-footer p {
-    color: white;
-}
 
 header h2 {
     background-color: var(--negro);
@@ -91,28 +98,39 @@ a[href="#"] {
 }
 
 
-#logo {
-    display: inline-block;
-    left: 15vh;
-}
-
-main {
+article {
     display: block;
     background-color: var(--rosaFuerte);
     text-align: center;
     margin: 2.5vh;
     border-radius: 20px;
     padding: 20px;
+    outline: 1px var(--rosaSuave) solid;
+    box-shadow: 20px 20px 20px var(--rosaFuerte);
+}
+
+
+#logo {
+    display: inline-block;
+    left: 15vh;
+    outline: none;
 }
 
 main img {
     border-radius: 20px;
-
+    outline: 1px var(--rosaSuave) solid;
+    box-shadow: 20px 20px 20px var(--rosaFuerte);
 }
 
-section,
+section{
+    background-color: var(--negro);
+    border-radius: 25px;
+    margin: 5px;
+    padding: 5px;
+}
+
 .contacto {
-    background-color: var(--verdeOscuro);
+    background-color: var(--negro);
     padding: 10px;
     margin-top: 10px;
     border-radius: 10px;
@@ -145,6 +163,69 @@ p {
     color: rgb(0, 204, 255);
 }
 
+section{
+    text-align: start;
+    padding: 30px;
+}
+
+section ol{
+    list-style-position: inside;
+    padding: 0;
+    margin: 0;
+}
+
+dd, li{
+    padding-left: 50px;
+    padding-top: 10px;
+    text-align: justify;
+}
+
+.listaAbecedario li{
+    list-style-position: inside;
+    padding: 0;
+    margin: 0;
+}
+
+.allPlay{
+    list-style-position: inside;
+    padding: 0;
+    margin: 0;
+}
+
+.allPlay li{
+    list-style-image: url("../assets/images/icon/redondo.png");
+}
+
+.pageTitle{
+    background-color: var(--verdeOscuro);
+    display: inline-block;
+    padding: 30px;
+    border-radius: 60px;
+}
+
+table, th, tr td{
+    border: 1px solid var(--rosaSuave);
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+table{
+    margin: auto;
+}
+
+.title{
+    color: var(--negro);
+
+}
+
+.sectionInfo p{
+    text-indent: 0;
+}
+
+.phoneEmail{
+    display: flex;
+    justify-content: space-between;
+}
 @keyframes vibrator {
     0% {
         transform: scale(1.5);
